@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" />
+    <title>Resto Hunter</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+</head>
+<body>
+<a class="skip-main" href="#content" id="skip">Skip to main content</a>
+<header class="header">
+    <div class="header__inner">
+        <h1 class="header__title">
+            Resto Hunter
+        </h1>
+    </div>
+    <a id="menu" class="header__menu" tabindex="0">☰</a>
+    <nav id="drawer" class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#/restaurant">Home</a></li>
+            <li class="nav__item"><a href="#/like">Favorite</a></li>
+            <li class="nav__item"><a href="https://www.linkedin.com/in/fahmi-nurfalah/" target="_blank">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero" id="hero">
+    <div class="hero__inner">
+        <h2 class="hero__title">Explore Restoran Favoritmu</h2>
+        <p class="hero__tagline">Kumpulan restoran mewah dan unik di Indonesia</p>
+    </div>
+</div>
+<main id="mainContent"></main>
+<footer>
+    <h5>Copyright &copy; 2021 - Resto Hunter Apps</h5>
+</footer>
+<script>
+    const skipBtn = document.querySelector('#skip');
+
+    skipBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo(0, 600);
+    });
+</script>
+</body>
+</html>
