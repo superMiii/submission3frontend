@@ -50,4 +50,6 @@ Scenario('unliking one restaurant', async ({ I }) => {
 
   // cek page like untuk memastikan restaurant sudah di unlike
   I.amOnPage('/#/like');
+  // jika tidak melihat element list-item berarti restaurant berhasil di unlike
+  I.dontSeeElement('.list-item');
 });

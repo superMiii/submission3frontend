@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
-    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 </head>
 <body>
 <a class="skip-main" href="#content" id="skip">Skip to main content</a>
@@ -44,7 +44,7 @@
 
     skipBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        window.scrollTo(0, 600);
+        document.getElementById('content').focus();
     });
 </script>
 </body>

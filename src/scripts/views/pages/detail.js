@@ -16,7 +16,7 @@ const Detail = {
   async render() {
     return `
         ${document.querySelector('#mainContent').innerHTML = createPageLoaderTemplate.show()}
-        <section class="content" id="content">
+        <section tabindex="0" class="content" id="content">
             <div class="latest">
                 <h3 class="latest__label">Detail</h3>
                 <div class="lists-detail" id="list"></div>
